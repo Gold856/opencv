@@ -20,7 +20,7 @@ IF(CV_GCC)
     SET(_PCH_isystem_prefix "-isystem")
     SET(_PCH_define_prefix "-D")
 
-ELSEIF(CMAKE_GENERATOR MATCHES "^Visual.*$")
+ELSEIF(MSVC)
     SET(PCHSupport_FOUND TRUE)
     SET(_PCH_include_prefix "/I")
     SET(_PCH_isystem_prefix "/I")
